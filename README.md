@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+Welcome to the Viisesolutions Website Project
+Project Overview
 
-## Project info
+This project represents my journey and hands-on effort in developing a fully responsive, modern, and professional website for Viisesolutions, a software consulting company. It was a challenging yet rewarding experience that allowed me to apply my frontend development skills and strengthen my understanding of real-world project structure and deployment.
 
-**URL**: https://lovable.dev/projects/dd9301e6-8421-40ef-b49a-717b25eb047f
+Live URL: https://viisesolutions.com
 
-## How can I edit this code?
+My Development Journey
 
-There are several ways of editing your application.
+Building this project from scratch helped me understand the entire web development workflow — from setting up the environment to designing UI components, integrating animations, and deploying the final product.
+I dedicated time and effort to ensure smooth performance, clean design, and scalability while following best coding practices.
 
-**Use Lovable**
+Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dd9301e6-8421-40ef-b49a-717b25eb047f) and start prompting.
+This project is developed using the latest frontend technologies:
 
-Changes made via Lovable will be committed automatically to this repo.
+⚡ Vite – for fast development and build optimization
 
-**Use your preferred IDE**
+⚛️ React + TypeScript – for component-based UI development with strong typing
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🎨 Tailwind CSS – for modern and responsive design
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🧩 shadcn/ui – for elegant pre-built components
 
-Follow these steps:
+How to Run the Project
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+If you'd like to explore or modify the project locally, follow these steps:
+
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The project is hosted and published through Lovable
+, which provides an easy and efficient way to deploy modern web applications.
 
-**Use GitHub Codespaces**
+Challenges & Learnings
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Throughout the project, I faced several real-world challenges, such as:
 
-## What technologies are used for this project?
+Handling component structure and reusability in React
 
-This project is built with:
+Managing responsive layouts using Tailwind CSS
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Fixing animation issues and optimizing loading performance
 
-## How can I deploy this project?
+Coordinating updates and feedback during development cycles
 
-Simply open [Lovable](https://lovable.dev/projects/dd9301e6-8421-40ef-b49a-717b25eb047f) and click on Share -> Publish.
+These experiences taught me the importance of attention to detail, version control, and clear communication in a collaborative environment.
+I also learned how to deploy and manage a live website, improving my confidence as a Frontend Developer Intern.
 
-## Can I connect a custom domain to my Lovable project?
+Reflection
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Working on this project helped me improve my frontend development, UI/UX design, and deployment skills. Every section, animation, and component reflects the dedication and creativity I invested to build a professional-level software company website from the ground up.
