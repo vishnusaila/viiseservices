@@ -22,7 +22,7 @@ const TermsAndConditions: React.FC = () => {
     <div className="min-h-screen pt-16 bg-background text-foreground">
       
       {/* Hero Section - UPDATED WITH BACKGROUND IMAGE AND 80% OPACITY OVERLAY */}
-      <section className="relative py-20 lg:py-24 bg-muted/20 dark:bg-gray-900/50 overflow-hidden">
+      <section className="relative py-20 lg:py-40 bg-muted/20 dark:bg-gray-900/50 overflow-hidden">
         
         {/* Background Image Container */}
         <div 
