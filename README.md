@@ -11,6 +11,19 @@ Building this project from scratch helped me understand the entire web developme
 I dedicated time and effort to ensure smooth performance, clean design, and scalability while following best coding practices.
 
 Technologies Used
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
 This project is developed using the latest frontend technologies:
 
@@ -51,6 +64,19 @@ Handling component structure and reusability in React
 
 Managing responsive layouts using Tailwind CSS
 
+.
+
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
 Fixing animation issues and optimizing loading performance
 
 Coordinating updates and feedback during development cycles
@@ -60,4 +86,4 @@ I also learned how to deploy and manage a live website, improving my confidence 
 
 Reflection
 
-Working on this project helped me improve my frontend development, UI/UX design, and deployment skills. Every section, animation, and component reflects the dedication and creativity I invested to build a professional-level software company website from the ground up.
+Working on this project helped me improve my frontend development, UI/UX design, and deployment skills. Every section, animation, and component reflects the dedication and creativity I invested to build a professional-level software company website from the ground up
