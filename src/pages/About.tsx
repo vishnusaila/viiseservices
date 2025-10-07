@@ -279,43 +279,7 @@ const About = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-20 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            
-            <h2 className="font-heading font-bold text-3xl lg:text-5xl mb-6">
-            Leadership <span className="text-[#11d4d4]">Team</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto dark:text-white">
-              Meet the visionaries and experts driving our mission to transform businesses through technology.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {leadership.map((leader, index) => (
-              <div 
-                key={leader.name}
-                className="text-center corporate-card p-6 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-20 h-20 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-10 w-10 text-primary-foreground" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2 dark:text-[#11d4d4]">{leader.name}</h3>
-                <div className="text-accent font-medium mb-3 dark:text-[#11d4d4]">{leader.position}</div>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed dark:text-white">{leader.bio}</p>
-                <div className="space-y-1">
-                  {leader.expertise.map((skill) => (
-                    <div key={skill} className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-full inline-block mr-1 dark:text-white">
-                      {skill}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
       {/* Leadership Team */}
       {/* ... Keep your leadership section as it is ... */}
 

@@ -31,7 +31,11 @@ const Footer = () => {
     { name: 'Contact', href: '/contact' }
   ];
 
- 
+  const legal = [
+    // Linked to the new routes in App.jsx
+    { name: 'Privacy Policy', href: '/privacy-policy' }, 
+    { name: 'Terms of Service', href: '/terms-and-conditions' },
+  ];
 
   const linkClass = 'text-gray-700 dark:text-gray-300 hover:text-[#11d4d4] dark:hover:text-[#11d4d4] focus:text-[#11d4d4] active:text-[#11d4d4] transition-colors duration-200 text-sm';
 
@@ -39,9 +43,11 @@ const Footer = () => {
     <footer className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* Main Footer */}
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-1 animate-fade-in-left">
+        {/* Adjusted grid to 4 columns */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8"> 
+          
+          {/* 1. Company Info (Takes 2 columns on mobile/tablet) */}
+          <div className="md:col-span-2 lg:col-span-2 animate-fade-in-left">
             <Link to="/" className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-[#11d4d4] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">V</span>
@@ -67,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* 2. Services */}
           <div className="animate-fade-in-up stagger-1">
             <h3 className="font-semibold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3">
@@ -81,7 +87,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* 3. Company */}
           <div className="animate-fade-in-up stagger-2">
             <h3 className="font-semibold text-lg mb-6">Company</h3>
             <ul className="space-y-3">
@@ -93,10 +99,9 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            
           </div>
 
-          {/* Contact Info */}
+          {/* 4. Contact & Legal Links */}
           <div className="animate-fade-in-right">
             <h3 className="font-semibold text-lg mb-6">Get In Touch</h3>
             <div className="space-y-4">
@@ -123,8 +128,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
@@ -132,18 +135,19 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-6">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 © 2025 VIISESOLUTIONS. All rights reserved.
               </p>
+              
+              {/* Legal Links Bar */}
               <div className="flex space-x-6">
-                <Link to="/privacy" className={linkClass}>
-                  Privacy Policy
-                </Link>
-                <Link to="/terms" className={linkClass}>
-                  Terms of Service
-                </Link>
+                {legal.map(item => (
+                  <Link key={item.name} to={item.href} className={linkClass}>
+                    {item.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="text-gray-600 dark:text-gray-400 text-sm">

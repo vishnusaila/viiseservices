@@ -12,12 +12,15 @@ import Products from "./pages/Products";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+// Imported the two new pages
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop"; 
-import ScrollToTopOnRoute from "./components/ScrollToTopOnRoute"; // <- Route scroll
+import ScrollToTopOnRoute from "./components/ScrollToTopOnRoute"; 
 
 const queryClient = new QueryClient();
 
@@ -41,6 +44,10 @@ const App = () => {
                 <Route path="/products" element={<Products />} />
                 <Route path="/careers" element={<Careers />} />
                 <Route path="/contact" element={<Contact />} />
+                {/* Added Routes for the new legal pages */}
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+                
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
